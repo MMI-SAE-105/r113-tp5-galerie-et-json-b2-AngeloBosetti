@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <title>Document</title>
 </head>
-<body>
+<body x-data="{
+    imageAffiche: 'https://picsum.photos/id/237/400/300' ,
+}">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
     <div class="overlay">
-        <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+        <figure><img :src= "imageAffiche "  ></figure>
     </div>
 </body>
 </html>
