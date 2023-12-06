@@ -1,15 +1,28 @@
-<h1>JSON</h1>
-<ul x-data="{
-    async données() {
-        const resp = await fetch('data.json');
-        return await resp.json();
-    },
-}">
-    <template x-for="donnée in données">
-        <li>
-            <span x-text="obj.nom">nom</span> :
-            <a href="obj.url" x-text="obj.projet">projet</a>
-        </li>
-    </template>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <ul x-data="{
+        async données() {
+            const resp = await fetch('data.json');
+            return await resp.json();
+        },
+    }">
+        <template x-for="données in données">
+            <li>
+                <span x-text="obj.nom">nom</span> :
+                <a :href="obj.url" x-text="obj.projet">projet</a>
+            </li>
+        </template>
+    </ul>
+</body>
+</html>
+
 
