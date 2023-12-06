@@ -1,14 +1,7 @@
-.vrac {
-"X" #000 #fff #fff 2px solid 0 0 0 0 0 100% 100% 100% 1rem 1rem 1rem 2px
-solid #fff 2rem 2rem 2rem 50% absolute auto background-color background-color
-block border border border-radius bottom center center color content cursor
-display display fixed font-family grid height height height left line-height 
-margin max-width padding place-content pointer position position
-rgba(0,0,0,0.9) right right sans-serif text-align top top width width
-}
+
 .overlay {
     /* Sit on top of the page content */
-    position: fixed
+    position: fixed;
     /* Full width (cover the whole page) */
     width: 100%;
     /* Full height (cover the whole page) */
@@ -22,7 +15,7 @@ rgba(0,0,0,0.9) right right sans-serif text-align top top width width
     /* Stay at the bottom */
     bottom: 0;
     /* Black background with opacity */
-    background-color: rgba(0,0,0,0,0.9);
+    background-color: rgba(0,0,0,0.9);
     /* Add a pointer on hover */
     cursor: pointer;
     /* Use a grid for easy centering */
@@ -62,10 +55,15 @@ rgba(0,0,0,0.9) right right sans-serif text-align top top width width
 }
 .overlay>figure {
     /* No margin */
+    margin: 0;
     /* 1rem padding */
+    padding: 1rem;
     /* White border of 2px */
+    border: 2px solid #fff;
 }
 .overlay>figure>img {
     /* Max width 100% for responsive image */
+    max-width: 100%;
     /* Height auto for keeping the ratio */
+    height: auto;
 }
